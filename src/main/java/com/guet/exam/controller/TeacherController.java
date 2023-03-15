@@ -20,6 +20,7 @@ public class TeacherController {
         }
         return R.error("账号或密码错误");
     }
+
     // 获取个人信息
     @GetMapping()
     public R<Teacher> getInfo(int id){
