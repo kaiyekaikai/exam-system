@@ -13,6 +13,7 @@ public class Student implements Serializable {
     private String dept;
     private String major;
     private String phone;
+    private String faceVector;
 
     public int getId() {
         return id;
@@ -62,6 +63,14 @@ public class Student implements Serializable {
         this.phone = phone;
     }
 
+    public String getFaceVector() {
+        return faceVector;
+    }
+
+    public void setFaceVector(String faceVector) {
+        this.faceVector = faceVector;
+    }
+
     @Override
     public String toString() {
         return "Student{" +
@@ -71,6 +80,7 @@ public class Student implements Serializable {
                 ", dept='" + dept + '\'' +
                 ", major='" + major + '\'' +
                 ", phone='" + phone + '\'' +
+                ", faceVector='" + faceVector + '\'' +
                 '}';
     }
 }

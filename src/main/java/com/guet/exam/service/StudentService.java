@@ -11,4 +11,7 @@ public interface StudentService extends IService<Student> {
 
     // 根据id获取个人信息
     Student getInfoById(int id);
+
+    // 根据token获取个人信息
+    Student getUserInfoByToken(String token);
 }
